@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>202 DOM Javascript</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h3>Pendaftaran Peminatan</h3>
+        </header>
+        <form onsubmit="KirimData(event)">
+            <label for="Nama">Nama</label><br>
+            <input type="text" id="Nama" placeholder="Masukan Nama Anda"><br><br>
+
+            <label for="Nim">Nim</label><br>
+            <input type="text" id="Nim" placeholder="Masukan Nim Anda"><br><br>
+
+            <p>Bidang Peminatan :</p>
+            <input type="radio" id="Progaming" name="peminatan" value="Progaming">
+            <label for="Progaming">Pemrograman</label><br>
+            <input type="radio" id="Jaringan" name="peminatan" value="Jaringan">
+            <label for="Jaringan">Jaringan</label><br>
+            <input type="radio" id="Data" name="peminatan" value="Data">
+            <label for="Data">Data</label><br>
+            <input type="radio" id="Desain" name="peminatan" value="Desain">
+            <label for="Desain">Desain</label><br>
+
+            <label for="Alamat">Alamat</label><br>
+            <textarea id="Alamat" placeholder="Masukan Alamat Lengkap Kamu" cols="30" rows="10"></textarea><br><br>
+
+            <button type="submit" onclick="KirimData()">Kirim</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
